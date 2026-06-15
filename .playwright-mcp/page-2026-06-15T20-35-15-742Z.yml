@@ -1,0 +1,140 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - link "LS Léa Sabanès Gestion Administrative" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e8]: LS
+        - generic [ref=e9]:
+          - generic [ref=e10]: Léa Sabanès
+          - generic [ref=e11]: Gestion Administrative
+      - navigation [ref=e12]:
+        - link "Accueil" [ref=e13] [cursor=pointer]:
+          - /url: /
+        - link "Blog" [ref=e14] [cursor=pointer]:
+          - /url: /blog
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: "#contact"
+  - main [ref=e16]:
+    - main [ref=e17]:
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - heading "L'administration simplifiée," [level=1] [ref=e22]:
+            - text: L'administration
+            - text: simplifiée,
+          - paragraph [ref=e23]: en toute confiance.
+          - paragraph [ref=e25]:
+            - text: J'accompagne les
+            - strong [ref=e26]: TPE, PME
+            - text: et les
+            - strong [ref=e27]: particuliers
+            - text: dans la gestion de leurs démarches administratives pour leur faire gagner du temps et leur offrir
+            - strong [ref=e28]: sérénité et efficacité.
+        - generic [ref=e31]:
+          - img [ref=e32]
+          - generic [ref=e35]: Espace de Travail Organisé
+      - generic [ref=e39]:
+        - img [ref=e40]
+        - generic [ref=e43]:
+          - paragraph [ref=e44]: RIGUEUR
+          - paragraph [ref=e45]: DISCRÉTION
+          - paragraph [ref=e46]: RÉACTIVITÉ
+          - paragraph [ref=e47]: CONFIANCE
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - heading "Mes Services" [level=2] [ref=e52]
+          - paragraph [ref=e54]: Un accompagnement sur-mesure adapté à vos besoins
+        - generic [ref=e55]:
+          - generic [ref=e57]:
+            - generic [ref=e58]:
+              - img [ref=e60]
+              - heading "Pour les Professionnels" [level=3] [ref=e63]
+            - list [ref=e64]:
+              - listitem [ref=e65]:
+                - img [ref=e66]
+                - generic [ref=e69]: Gestion administrative courante
+              - listitem [ref=e70]:
+                - img [ref=e71]
+                - generic [ref=e74]: Facturation & suivi des paiements
+              - listitem [ref=e75]:
+                - img [ref=e76]
+                - generic [ref=e79]: Relances clients & fournisseurs
+              - listitem [ref=e80]:
+                - img [ref=e81]
+                - generic [ref=e84]: Gestion de dossiers & documents
+              - listitem [ref=e85]:
+                - img [ref=e86]
+                - generic [ref=e89]: Secrétariat externalisé
+              - listitem [ref=e90]:
+                - img [ref=e91]
+                - generic [ref=e94]: Préparation de tableaux de suivi
+              - listitem [ref=e95]:
+                - img [ref=e96]
+                - generic [ref=e99]: Support RH & gestion du personnel
+            - paragraph [ref=e100]: Un soutien fiable au quotidien pour vous concentrer sur l'essentiel.
+          - generic [ref=e102]:
+            - generic [ref=e103]:
+              - img [ref=e105]
+              - heading "Pour les Particuliers" [level=3] [ref=e108]
+            - list [ref=e109]:
+              - listitem [ref=e110]:
+                - img [ref=e111]
+                - generic [ref=e114]: Démarches administratives
+              - listitem [ref=e115]:
+                - img [ref=e116]
+                - generic [ref=e119]: Courriers & déclarations
+              - listitem [ref=e120]:
+                - img [ref=e121]
+                - generic [ref=e124]: Organismes publics
+              - listitem [ref=e125]:
+                - img [ref=e126]
+                - generic [ref=e129]: Dossiers retraite
+              - listitem [ref=e130]:
+                - img [ref=e131]
+                - generic [ref=e134]: Successions
+              - listitem [ref=e135]:
+                - img [ref=e136]
+                - generic [ref=e139]: Classement & organisation
+            - paragraph [ref=e140]: Un accompagnement personnalisé pour des démarches plus simples.
+  - contentinfo [ref=e141]:
+    - generic:
+      - img
+    - generic [ref=e142]:
+      - generic [ref=e143]:
+        - generic [ref=e144]:
+          - paragraph [ref=e146]: Contact
+          - generic [ref=e148]:
+            - generic [ref=e149]:
+              - img [ref=e151]
+              - generic [ref=e153]: 07 50 65 72 62
+            - generic [ref=e154]:
+              - img [ref=e156]
+              - link "sabaneslea33@gmail.com" [ref=e159] [cursor=pointer]:
+                - /url: mailto:sabaneslea33@gmail.com
+            - generic [ref=e160]:
+              - img [ref=e162]
+              - generic [ref=e165]: Interventions à distance et sur rendez-vous
+        - generic [ref=e166]:
+          - generic [ref=e167]:
+            - img [ref=e169]
+            - heading "Besoin d'un coup de pouce ?" [level=3] [ref=e172]
+          - paragraph [ref=e174]: Contactez-moi pour en discuter, je serai ravie de vous accompagner !
+          - generic [ref=e176]:
+            - generic [ref=e177]:
+              - generic [ref=e178]: Nom complet
+              - textbox "Nom complet" [ref=e179]:
+                - /placeholder: Jean Dupont
+            - generic [ref=e180]:
+              - generic [ref=e181]: Adresse Email
+              - textbox "Adresse Email" [ref=e182]:
+                - /placeholder: jean.dupont@email.com
+            - generic [ref=e183]:
+              - generic [ref=e184]: Vous êtes...
+              - combobox "Vous êtes..." [ref=e185]:
+                - option "Un Particulier" [selected]
+                - option "Un Professionnel"
+            - generic [ref=e186]:
+              - generic [ref=e187]: Votre message
+              - textbox "Votre message" [ref=e188]:
+                - /placeholder: Comment puis-je vous aider ?
+            - button "Envoyer mon message" [ref=e189]
+      - paragraph [ref=e191]: © 2026 Léa Sabanès. Tous droits réservés.

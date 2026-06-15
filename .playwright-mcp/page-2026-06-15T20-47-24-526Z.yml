@@ -1,0 +1,128 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - link "LS Léa Sabanès - EI Gestion Administrative" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e8]: LS
+        - generic [ref=e9]:
+          - generic [ref=e10]: Léa Sabanès - EI
+          - text: Gestion Administrative
+      - navigation [ref=e11]:
+        - link "Accueil" [ref=e12] [cursor=pointer]:
+          - /url: /
+        - link "Blog" [ref=e13] [cursor=pointer]:
+          - /url: /blog
+        - link "Contact" [ref=e14] [cursor=pointer]:
+          - /url: "#contact"
+  - main [ref=e15]:
+    - main [ref=e16]:
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - heading "L'administration simplifiée," [level=1] [ref=e20]
+          - paragraph [ref=e21]: en toute confiance.
+          - paragraph [ref=e22]: Déléguez vos tâches administratives à une experte de confiance pour vous recentrer sur l'essentiel. Que vous soyez un professionnel ou un particulier, je vous accompagne avec rigueur et discrétion.
+        - img "Léa Sabanès - Gestion Administrative" [ref=e25]
+      - generic [ref=e29]:
+        - generic [ref=e30]: RIGUEUR
+        - generic [ref=e31]: •
+        - generic [ref=e32]: DISCRÉTION
+        - generic [ref=e33]: •
+        - generic [ref=e34]: RÉACTIVITÉ
+        - generic [ref=e35]: •
+        - generic [ref=e36]: CONFIANCE
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - heading "Mes Services" [level=2] [ref=e39]
+          - paragraph [ref=e40]: Un accompagnement sur-mesure adapté à vos besoins
+        - generic [ref=e41]:
+          - generic [ref=e43]:
+            - generic [ref=e44]:
+              - img [ref=e46]
+              - heading "POUR LES PROFESSIONNELS" [level=3] [ref=e49]
+            - list [ref=e50]:
+              - listitem [ref=e51]:
+                - img [ref=e52]
+                - generic [ref=e54]: Gestion administrative courante
+              - listitem [ref=e55]:
+                - img [ref=e56]
+                - generic [ref=e58]: Facturation & suivi des paiements
+              - listitem [ref=e59]:
+                - img [ref=e60]
+                - generic [ref=e62]: Relances clients & fournisseurs
+              - listitem [ref=e63]:
+                - img [ref=e64]
+                - generic [ref=e66]: Gestion de dossiers & documents
+              - listitem [ref=e67]:
+                - img [ref=e68]
+                - generic [ref=e70]: Secrétariat externalisé
+              - listitem [ref=e71]:
+                - img [ref=e72]
+                - generic [ref=e74]: Préparation de tableaux de suivi
+              - listitem [ref=e75]:
+                - img [ref=e76]
+                - generic [ref=e78]: Support RH & gestion du personnel
+            - paragraph [ref=e79]: "\"Votre partenaire pour une gestion optimisée.\""
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - img [ref=e84]
+              - heading "POUR LES PARTICULIERS" [level=3] [ref=e87]
+            - list [ref=e88]:
+              - listitem [ref=e89]:
+                - img [ref=e90]
+                - generic [ref=e92]: Démarches administratives
+              - listitem [ref=e93]:
+                - img [ref=e94]
+                - generic [ref=e96]: Courriers & déclarations
+              - listitem [ref=e97]:
+                - img [ref=e98]
+                - generic [ref=e100]: Organismes publics
+              - listitem [ref=e101]:
+                - img [ref=e102]
+                - generic [ref=e104]: Dossiers retraite
+              - listitem [ref=e105]:
+                - img [ref=e106]
+                - generic [ref=e108]: Successions
+              - listitem [ref=e109]:
+                - img [ref=e110]
+                - generic [ref=e112]: Classement & organisation
+            - paragraph [ref=e113]: "\"Fini la phobie administrative, je m'occupe de tout.\""
+  - contentinfo [ref=e114]:
+    - generic [ref=e115]:
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - generic [ref=e118]:
+            - heading "Léa Sabanès" [level=2] [ref=e119]
+            - paragraph [ref=e120]: Votre organisation, ma priorité.
+          - generic [ref=e121]:
+            - generic [ref=e122]:
+              - img [ref=e124]
+              - generic [ref=e126]: 07 50 65 72 62
+            - generic [ref=e127]:
+              - img [ref=e129]
+              - link "sabaneslea33@gmail.com" [ref=e132] [cursor=pointer]:
+                - /url: mailto:sabaneslea33@gmail.com
+            - generic [ref=e133]:
+              - img [ref=e135]
+              - generic [ref=e138]: Interventions à distance et sur rendez-vous
+        - generic [ref=e139]:
+          - heading "Besoin d'un coup de pouce ?" [level=3] [ref=e140]
+          - generic [ref=e141]:
+            - generic [ref=e142]:
+              - generic [ref=e143]: Nom complet
+              - textbox "Nom complet" [ref=e144]:
+                - /placeholder: Jean Dupont
+            - generic [ref=e145]:
+              - generic [ref=e146]: Adresse Email
+              - textbox "Adresse Email" [ref=e147]:
+                - /placeholder: jean.dupont@email.com
+            - generic [ref=e148]:
+              - generic [ref=e149]: Vous êtes...
+              - combobox "Vous êtes..." [ref=e150]:
+                - option "Un Particulier" [selected]
+                - option "Un Professionnel"
+            - generic [ref=e151]:
+              - generic [ref=e152]: Votre message
+              - textbox "Votre message" [ref=e153]:
+                - /placeholder: Comment puis-je vous aider ?
+            - button "Envoyer mon message" [ref=e154]
+      - paragraph [ref=e156]: © 2026 Léa Sabanès. Tous droits réservés.

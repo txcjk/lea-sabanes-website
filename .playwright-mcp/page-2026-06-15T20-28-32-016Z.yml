@@ -1,0 +1,110 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - link "LS Léa Sabanès - EI Gestion Administrative" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e8]: LS
+        - generic [ref=e9]:
+          - generic [ref=e10]: Léa Sabanès - EI
+          - text: Gestion Administrative
+      - navigation [ref=e11]:
+        - link "Accueil" [ref=e12] [cursor=pointer]:
+          - /url: /
+        - link "Blog" [ref=e13] [cursor=pointer]:
+          - /url: /blog
+        - link "Contact" [ref=e14] [cursor=pointer]:
+          - /url: "#contact"
+  - main [ref=e15]:
+    - main [ref=e16]:
+      - generic [ref=e17]:
+        - heading "Le Blog" [level=1] [ref=e18]
+        - paragraph [ref=e19]: Conseils, astuces et actualités pour mieux vivre votre administration au quotidien.
+      - generic [ref=e20]:
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - generic [ref=e25]:
+              - img [ref=e26]
+              - text: 10 juin 2026
+            - generic [ref=e28]:
+              - img [ref=e29]
+              - text: 4 min
+          - heading "Pourquoi externaliser sa gestion administrative en tant que PME ?" [level=2] [ref=e32]:
+            - link "Pourquoi externaliser sa gestion administrative en tant que PME ?" [ref=e33] [cursor=pointer]:
+              - /url: /blog/externaliser-gestion-administrative-pme
+          - paragraph [ref=e34]: Découvrez les avantages stratégiques et financiers de l'externalisation administrative pour votre petite ou moyenne entreprise.
+          - link "Lire l'article" [ref=e35] [cursor=pointer]:
+            - /url: /blog/externaliser-gestion-administrative-pme
+            - text: Lire l'article
+            - img [ref=e36]
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - generic [ref=e42]:
+              - img [ref=e43]
+              - text: 5 juin 2026
+            - generic [ref=e45]:
+              - img [ref=e46]
+              - text: 3 min
+          - heading "Comment organiser efficacement ses papiers administratifs en tant que particulier ?" [level=2] [ref=e49]:
+            - link "Comment organiser efficacement ses papiers administratifs en tant que particulier ?" [ref=e50] [cursor=pointer]:
+              - /url: /blog/organiser-papiers-administratifs-particulier
+          - paragraph [ref=e51]: Fini la phobie administrative ! Voici quelques conseils simples pour classer, trier et conserver vos documents importants.
+          - link "Lire l'article" [ref=e52] [cursor=pointer]:
+            - /url: /blog/organiser-papiers-administratifs-particulier
+            - text: Lire l'article
+            - img [ref=e53]
+        - generic [ref=e57]:
+          - generic [ref=e58]:
+            - generic [ref=e59]:
+              - img [ref=e60]
+              - text: 28 mai 2026
+            - generic [ref=e62]:
+              - img [ref=e63]
+              - text: 5 min
+          - 'heading "Préparer son dossier de retraite sereinement : les étapes clés" [level=2] [ref=e66]':
+            - 'link "Préparer son dossier de retraite sereinement : les étapes clés" [ref=e67] [cursor=pointer]':
+              - /url: /blog/preparer-dossier-retraite-sereinement
+          - paragraph [ref=e68]: La préparation du départ à la retraite demande de l'anticipation. Découvrez les étapes indispensables pour ne rien oublier.
+          - link "Lire l'article" [ref=e69] [cursor=pointer]:
+            - /url: /blog/preparer-dossier-retraite-sereinement
+            - text: Lire l'article
+            - img [ref=e70]
+  - contentinfo [ref=e72]:
+    - generic [ref=e73]:
+      - generic [ref=e74]:
+        - generic [ref=e75]:
+          - generic [ref=e76]:
+            - heading "Léa Sabanès" [level=2] [ref=e77]
+            - paragraph [ref=e78]: Votre organisation, ma priorité.
+          - generic [ref=e79]:
+            - generic [ref=e80]:
+              - img [ref=e82]
+              - generic [ref=e84]: 07 50 65 72 62
+            - generic [ref=e85]:
+              - img [ref=e87]
+              - link "sabaneslea33@gmail.com" [ref=e90] [cursor=pointer]:
+                - /url: mailto:sabaneslea33@gmail.com
+            - generic [ref=e91]:
+              - img [ref=e93]
+              - generic [ref=e96]: Interventions à distance et sur rendez-vous
+        - generic [ref=e97]:
+          - heading "Besoin d'un coup de pouce ?" [level=3] [ref=e98]
+          - generic [ref=e99]:
+            - generic [ref=e100]:
+              - generic [ref=e101]: Nom complet
+              - textbox "Nom complet" [ref=e102]:
+                - /placeholder: Jean Dupont
+            - generic [ref=e103]:
+              - generic [ref=e104]: Adresse Email
+              - textbox "Adresse Email" [ref=e105]:
+                - /placeholder: jean.dupont@email.com
+            - generic [ref=e106]:
+              - generic [ref=e107]: Vous êtes...
+              - combobox "Vous êtes..." [ref=e108]:
+                - option "Un Particulier" [selected]
+                - option "Un Professionnel"
+            - generic [ref=e109]:
+              - generic [ref=e110]: Votre message
+              - textbox "Votre message" [ref=e111]:
+                - /placeholder: Comment puis-je vous aider ?
+            - button "Envoyer mon message" [ref=e112]
+      - paragraph [ref=e114]: © 2026 Léa Sabanès. Tous droits réservés.

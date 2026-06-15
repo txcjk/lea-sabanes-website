@@ -1,0 +1,83 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - link "LS Léa Sabanès - EI Gestion Administrative" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e8]: LS
+        - generic [ref=e9]:
+          - generic [ref=e10]: Léa Sabanès - EI
+          - text: Gestion Administrative
+      - navigation [ref=e11]:
+        - link "Accueil" [ref=e12] [cursor=pointer]:
+          - /url: /
+        - link "Blog" [ref=e13] [cursor=pointer]:
+          - /url: /blog
+        - link "Contact" [ref=e14] [cursor=pointer]:
+          - /url: "#contact"
+  - main [ref=e15]:
+    - article [ref=e16]:
+      - generic [ref=e17]:
+        - link "Retour aux articles" [ref=e18] [cursor=pointer]:
+          - /url: /blog
+          - img [ref=e19]
+          - text: Retour aux articles
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - generic [ref=e23]:
+              - img [ref=e24]
+              - text: 10 juin 2026
+            - generic [ref=e26]:
+              - img [ref=e27]
+              - text: 4 min
+          - heading "Pourquoi externaliser sa gestion administrative en tant que PME ?" [level=1] [ref=e30]
+          - paragraph [ref=e31]: Découvrez les avantages stratégiques et financiers de l'externalisation administrative pour votre petite ou moyenne entreprise.
+        - generic [ref=e32]:
+          - paragraph [ref=e33]: L'externalisation de la gestion administrative est devenue une solution incontournable pour les PME en pleine croissance. Face à la complexité croissante des réglementations et à la nécessité de se concentrer sur son cœur de métier, déléguer ces tâches à une secrétaire indépendante offre de nombreux avantages.
+          - heading "1. Un gain de temps précieux" [level=2] [ref=e34]
+          - paragraph [ref=e35]: En confiant vos tâches administratives (facturation, devis, relances) à une professionnelle, vous libérez du temps pour vos équipes et pour vous-même. Ce temps gagné peut être réinvesti dans des activités à plus forte valeur ajoutée, comme le développement commercial ou l'innovation.
+          - heading "2. Une maîtrise des coûts" [level=2] [ref=e36]
+          - paragraph [ref=e37]: Embaucher un salarié à temps plein ou partiel implique des coûts fixes (charges patronales, congés payés, matériel). Avec une secrétaire indépendante, vous ne payez que les heures réellement effectuées ou les prestations définies au contrat. C'est une solution flexible qui s'adapte à la charge de travail de votre entreprise.
+          - heading "3. Une expertise garantie" [level=2] [ref=e38]
+          - paragraph [ref=e39]: Forte de son expérience auprès de divers clients, une secrétaire freelance apporte une expertise pointue, de la rigueur et souvent de nouveaux outils d'organisation pour optimiser vos processus internes.
+          - paragraph [ref=e40]:
+            - emphasis [ref=e41]: En conclusion, externaliser n'est pas une perte de contrôle, mais un levier de performance pour votre entreprise.
+  - contentinfo [ref=e42]:
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - heading "Léa Sabanès" [level=2] [ref=e47]
+            - paragraph [ref=e48]: Votre organisation, ma priorité.
+          - generic [ref=e49]:
+            - generic [ref=e50]:
+              - img [ref=e52]
+              - generic [ref=e54]: 07 50 65 72 62
+            - generic [ref=e55]:
+              - img [ref=e57]
+              - link "sabaneslea33@gmail.com" [ref=e60] [cursor=pointer]:
+                - /url: mailto:sabaneslea33@gmail.com
+            - generic [ref=e61]:
+              - img [ref=e63]
+              - generic [ref=e66]: Interventions à distance et sur rendez-vous
+        - generic [ref=e67]:
+          - heading "Besoin d'un coup de pouce ?" [level=3] [ref=e68]
+          - generic [ref=e69]:
+            - generic [ref=e70]:
+              - generic [ref=e71]: Nom complet
+              - textbox "Nom complet" [ref=e72]:
+                - /placeholder: Jean Dupont
+            - generic [ref=e73]:
+              - generic [ref=e74]: Adresse Email
+              - textbox "Adresse Email" [ref=e75]:
+                - /placeholder: jean.dupont@email.com
+            - generic [ref=e76]:
+              - generic [ref=e77]: Vous êtes...
+              - combobox "Vous êtes..." [ref=e78]:
+                - option "Un Particulier" [selected]
+                - option "Un Professionnel"
+            - generic [ref=e79]:
+              - generic [ref=e80]: Votre message
+              - textbox "Votre message" [ref=e81]:
+                - /placeholder: Comment puis-je vous aider ?
+            - button "Envoyer mon message" [ref=e82]
+      - paragraph [ref=e84]: © 2026 Léa Sabanès. Tous droits réservés.
