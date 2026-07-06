@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Mail, Phone, MapPin, CheckCircle, Loader2, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Mail, Phone, MapPin, CheckCircle, Loader2, X, AlertCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useProfile } from '../context/ProfileContext';
 import { supabase } from '../lib/supabaseClient';
@@ -18,6 +19,8 @@ const Footer = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [submitError, setSubmitError] = useState(null);
+  const [errors, setErrors] = useState({});
+  const [touched, setTouched] = useState({});
 
   // Bidirectional sync: when profile is selected from service cards, update form
   useEffect(() => {
@@ -26,9 +29,27 @@ const Footer = () => {
     }
   }, [selectedProfile]);
 
+  const validateField = (name, value) => {
+    if (!value.trim()) {
+      return 'Ce champ est requis.';
+    }
+    if (name === 'email' && value.trim()) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(value.trim())) {
+        return 'Veuillez entrer une adresse email valide.';
+      }
+    }
+    return '';
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
+    
+    // Clear error when user types
+    if (errors[name]) {
+      setErrors(prev => ({ ...prev, [name]: '' }));
+    }
     
     // Bidirectional sync: when user changes dropdown, highlight corresponding card
     if (name === 'profile') {
@@ -36,8 +57,35 @@ const Footer = () => {
     }
   };
 
+  const handleBlur = (e) => {
+    const { name, value } = e.target;
+    setTouched(prev => ({ ...prev, [name]: true }));
+    const error = validateField(name, value);
+    setErrors(prev => ({ ...prev, [name]: error }));
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // Validate all fields
+    const newErrors = {};
+    let hasErrors = false;
+    Object.entries(formData).forEach(([key, value]) => {
+      if (key !== 'profile') {
+        const error = validateField(key, value);
+        if (error) {
+          newErrors[key] = error;
+          hasErrors = true;
+        }
+      }
+    });
+    
+    if (hasErrors) {
+      setErrors(newErrors);
+      setTouched({ name: true, email: true, message: true });
+      return;
+    }
+    
     setIsSubmitting(true);
     setSubmitError(null);
     
@@ -73,6 +121,8 @@ const Footer = () => {
   const closeModal = () => {
     setShowModal(false);
     setSubmitError(null);
+    setErrors({});
+    setTouched({});
   };
 
   return (
@@ -89,14 +139,14 @@ const Footer = () => {
             
             <div className="space-y-4">
               <div className="flex items-center gap-4 text-linen">
-                <div className="w-10 h-10 rounded-full bg-teal flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-peach flex items-center justify-center">
                   <Phone size={20} className="text-white" />
                 </div>
                 <span className="font-sans text-lg">07 50 65 72 62</span>
               </div>
               
               <div className="flex items-center gap-4 text-linen">
-                <div className="w-10 h-10 rounded-full bg-teal flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-peach flex items-center justify-center">
                   <Mail size={20} className="text-white" />
                 </div>
                 <a href="mailto:sabaneslea33@gmail.com" className="font-sans text-lg hover:text-peach transition-colors">
@@ -105,7 +155,7 @@ const Footer = () => {
               </div>
               
               <div className="flex items-center gap-4 text-linen">
-                <div className="w-10 h-10 rounded-full bg-teal flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-peach flex items-center justify-center">
                   <MapPin size={20} className="text-white" />
                 </div>
                 <span className="font-sans text-lg">Interventions à distance et sur rendez-vous</span>
@@ -127,9 +177,19 @@ const Footer = () => {
                   autoComplete="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-teal focus:border-teal outline-none transition-all"
+                  onBlur={handleBlur}
+                  className={`w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-peach focus:border-peach outline-none transition-all ${
+                    touched.name && errors.name ? 'border-red-200 ring-2 ring-red-200' : 'border-gray-300'
+                  }`}
                   placeholder="Jean Dupont"
+                  aria-invalid={touched.name && errors.name ? 'true' : 'false'}
+                  aria-describedby={touched.name && errors.name ? 'contact-name-error' : undefined}
                 />
+                {touched.name && errors.name && (
+                  <p id="contact-name-error" className="mt-1 text-sm text-red-600 flex items-center gap-1" role="alert">
+                    <AlertCircle size={14} /> {errors.name}
+                  </p>
+                )}
               </div>
               
               <div>
@@ -142,9 +202,19 @@ const Footer = () => {
                   autoComplete="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-teal focus:border-teal outline-none transition-all"
+                  onBlur={handleBlur}
+                  className={`w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-peach focus:border-peach outline-none transition-all ${
+                    touched.email && errors.email ? 'border-red-200 ring-2 ring-red-200' : 'border-gray-300'
+                  }`}
                   placeholder="jean.dupont@email.com"
+                  aria-invalid={touched.email && errors.email ? 'true' : 'false'}
+                  aria-describedby={touched.email && errors.email ? 'contact-email-error' : undefined}
                 />
+                {touched.email && errors.email && (
+                  <p id="contact-email-error" className="mt-1 text-sm text-red-600 flex items-center gap-1" role="alert">
+                    <AlertCircle size={14} /> {errors.email}
+                  </p>
+                )}
               </div>
 
               <div>
@@ -154,7 +224,7 @@ const Footer = () => {
                   name="profile"
                   value={formData.profile}
                   onChange={handleChange}
-                  className={`w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-teal focus:border-teal outline-none transition-all bg-white ${
+                  className={`w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-peach focus:border-peach outline-none transition-all bg-white ${
                     selectedProfile ? 'border-peach ring-2 ring-peach/30' : 'border-gray-300'
                   }`}
                 >
@@ -172,9 +242,19 @@ const Footer = () => {
                   rows="4"
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-teal focus:border-teal outline-none transition-all resize-none"
+                  onBlur={handleBlur}
+                  className={`w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-peach focus:border-peach outline-none transition-all resize-none ${
+                    touched.message && errors.message ? 'border-red-200 ring-2 ring-red-200' : 'border-gray-300'
+                  }`}
                   placeholder="Comment puis-je vous aider ?"
+                  aria-invalid={touched.message && errors.message ? 'true' : 'false'}
+                  aria-describedby={touched.message && errors.message ? 'contact-message-error' : undefined}
                 ></textarea>
+                {touched.message && errors.message && (
+                  <p id="contact-message-error" className="mt-1 text-sm text-red-600 flex items-center gap-1" role="alert">
+                    <AlertCircle size={14} /> {errors.message}
+                  </p>
+                )}
               </div>
 
               {submitError && (
@@ -197,7 +277,11 @@ const Footer = () => {
           
         </div>
 
-        <div className="mt-12 pt-8 border-t border-teal/30 text-center text-linen/70 font-sans text-sm">
+        <div className="mt-12 pt-8 border-t border-peach/30 text-center text-linen/70 font-sans text-sm space-y-3">
+          <div className="flex justify-center gap-6">
+            <Link to="/mentions-legales" className="hover:text-white transition-colors">Mentions légales</Link>
+            <Link to="/politique-confidentialite" className="hover:text-white transition-colors">Politique de confidentialité</Link>
+          </div>
           <p>&copy; {new Date().getFullYear()} Léa Sabanès. Tous droits réservés.</p>
         </div>
       </div>
@@ -227,7 +311,7 @@ const Footer = () => {
                 <X size={24} />
               </button>
               <div className="flex flex-col items-center text-center">
-                <CheckCircle size={64} className="text-teal mb-4" aria-hidden="true" />
+                <CheckCircle size={64} className="text-peach mb-4" aria-hidden="true" />
                 <h4 id="modal-title" className="font-serif text-2xl font-bold mb-2">Message envoyé !</h4>
                 <p id="modal-desc" className="font-sans text-gray-600">Merci de m'avoir contactée. Je reviendrai vers vous dans les plus brefs délais.</p>
                 <Button variant="outline" className="mt-6" onClick={closeModal}>

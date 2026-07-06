@@ -53,7 +53,7 @@ const ServiceCard = ({
               >
                 <Check
                   size={20}
-                  className="text-peach shrink-0 mt-0.5 group-hover/item:text-teal transition-colors"
+                  className="text-peach shrink-0 mt-0.5 group-hover/item:text-charcoal transition-colors"
                 />
               </motion.div>
               <span className="font-sans text-charcoal/80">{service}</span>
@@ -67,7 +67,7 @@ const ServiceCard = ({
           onClick={() => onSelectProfile(profileType)}
           className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-peach text-white font-sans font-medium text-sm hover:bg-peach/90 transition-colors group/btn"
         >
-          Sélectionner ce profil
+          Choisir cette offre
           <ArrowRight
             size={16}
             className="group-hover/btn:translate-x-1 transition-transform"

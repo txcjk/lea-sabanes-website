@@ -28,12 +28,12 @@ const Header = () => {
           
           {/* Logo & Title */}
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-teal text-white rounded-full flex items-center justify-center font-serif text-xl font-bold shadow-sm">
+            <div className="w-12 h-12 bg-peach text-white rounded-full flex items-center justify-center font-serif text-xl font-bold shadow-sm">
               LS
             </div>
             <div>
               <span className="font-serif text-2xl text-charcoal font-bold leading-none block">Léa Sabanès - EI</span>
-              <span className="text-sm font-sans text-teal font-medium tracking-wide">Gestion Administrative</span>
+              <span className="text-sm font-sans text-peach font-medium tracking-wide">Gestion Administrative</span>
             </div>
           </Link>
 

@@ -43,7 +43,7 @@ const BlogPreview = ({ posts }) => {
                   </span>
                 </div>
 
-                <h3 className="font-serif text-xl text-charcoal font-bold mb-3 group-hover:text-teal transition-colors">
+                <h3 className="font-serif text-xl text-charcoal font-bold mb-3 group-hover:text-peach transition-colors">
                   <Link to={`/blog/${post.slug}`}>
                     {post.title}
                   </Link>
@@ -55,7 +55,7 @@ const BlogPreview = ({ posts }) => {
 
                 <Link
                   to={`/blog/${post.slug}`}
-                  className="inline-flex items-center gap-2 text-peach font-sans font-semibold text-sm hover:text-teal transition-colors mt-auto"
+                  className="inline-flex items-center gap-2 text-peach font-sans font-semibold text-sm hover:text-charcoal transition-colors mt-auto"
                 >
                   Lire l'article <ArrowRight size={16} />
                 </Link>

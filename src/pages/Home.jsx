@@ -157,11 +157,11 @@ const Home = () => {
           <ServiceCard
             title="POUR LES PROFESSIONNELS"
             icon={Briefcase}
-            iconBg="bg-teal/10 text-teal"
+            iconBg="bg-peach/20 text-peach"
             services={proServices}
             quote="Votre partenaire pour une gestion optimisée."
             profileType="professionnel"
-            accentColor="border-t-teal"
+            accentColor="border-t-peach"
             onSelectProfile={handleSelectProfile}
           />
 
@@ -170,7 +170,7 @@ const Home = () => {
             icon={User}
             iconBg="bg-charcoal/10 text-charcoal"
             services={particulierServices}
-            quote="Fini la phobie administrative, je m'occupe de tout."
+            quote="Vos démarches simplifiées, je m'occupe de tout."
             profileType="particulier"
             accentColor="border-t-charcoal"
             onSelectProfile={handleSelectProfile}

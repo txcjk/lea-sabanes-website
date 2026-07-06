@@ -26,7 +26,7 @@ export const blogData = [
     slug: "organiser-papiers-administratifs-particulier",
     title: "Comment organiser efficacement ses papiers administratifs en tant que particulier ?",
     date: "2026-06-05",
-    excerpt: "Fini la phobie administrative ! Voici quelques conseils simples pour classer, trier et conserver vos documents importants.",
+      excerpt: "Marre de la paperasse ? Voici quelques conseils simples pour classer, trier et conserver vos documents importants.",
     readTime: "3 min",
     content: `
       <p>Gérer ses documents personnels peut vite devenir un casse-tête. Pourtant, une bonne organisation est essentielle pour éviter le stress, notamment lors de déclarations d'impôts ou de démarches auprès d'organismes publics.</p>

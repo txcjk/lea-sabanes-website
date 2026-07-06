@@ -5,7 +5,7 @@ const Button = ({ children, variant = 'primary', className = '', ...props }) => 
   
   const variants = {
     primary: "text-white bg-peach hover:bg-peach/90 focus:ring-peach",
-    secondary: "text-white bg-teal hover:bg-teal/90 focus:ring-teal",
+    secondary: "text-white bg-charcoal hover:bg-charcoal/90 focus:ring-charcoal",
     outline: "text-charcoal bg-transparent border border-charcoal hover:bg-charcoal hover:text-white focus:ring-charcoal"
   };
 

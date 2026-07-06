@@ -104,7 +104,7 @@ const BlogPost = () => {
 
         {/* The content itself is strict semantic HTML provided by the data file */}
         <div 
-          className="prose prose-lg prose-headings:font-serif prose-headings:text-charcoal prose-p:font-sans prose-p:text-charcoal/80 prose-a:text-teal hover:prose-a:text-peach prose-strong:text-charcoal max-w-none"
+          className="prose prose-lg prose-headings:font-serif prose-headings:text-charcoal prose-p:font-sans prose-p:text-charcoal/80 prose-a:text-peach hover:prose-a:text-charcoal prose-strong:text-charcoal max-w-none"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
         

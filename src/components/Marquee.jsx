@@ -1,15 +1,15 @@
 import { motion } from 'framer-motion';
 
 const Marquee = ({ items, speed = 20 }) => {
-  // Duplicate items for seamless loop
-  const duplicatedItems = [...items, ...items, ...items];
+  // Seulement 2x duplication pour boucle fluide (vs 3x avant)
+  const duplicatedItems = [...items, ...items];
 
   return (
     <div className="overflow-hidden whitespace-nowrap py-4">
       <motion.div
         className="flex gap-8 md:gap-16 items-center"
         animate={{
-          x: [0, -33.33 + '%'],
+          x: ['0%', '-50%'],
         }}
         transition={{
           x: {
@@ -18,9 +18,6 @@ const Marquee = ({ items, speed = 20 }) => {
             duration: speed,
             ease: 'linear',
           },
-        }}
-        whileHover={{
-          animationPlayState: 'paused',
         }}
       >
         {duplicatedItems.map((item, idx) => (

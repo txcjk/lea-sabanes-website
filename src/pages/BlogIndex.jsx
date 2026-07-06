@@ -70,7 +70,7 @@ const BlogIndex = () => {
                   </span>
                 </div>
                 
-                <h2 className="font-serif text-xl text-charcoal font-bold mb-3 group-hover:text-teal transition-colors">
+                <h2 className="font-serif text-xl text-charcoal font-bold mb-3 group-hover:text-peach transition-colors">
                   <Link to={`/blog/${post.slug}`}>
                     {post.title}
                   </Link>
