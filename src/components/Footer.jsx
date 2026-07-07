@@ -105,7 +105,6 @@ const Footer = () => {
         return;
       }
 
-      // Success
       setShowModal(true);
       setFormData({ name: '', email: '', profile: 'particulier', message: '' });
       setSelectedProfile(null);
@@ -130,7 +129,6 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           
-          {/* Contact Info */}
           <div className="space-y-8">
             <div>
               <h2 className="font-serif text-3xl mb-2 text-white">Léa Sabanès</h2>
@@ -163,7 +161,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
           <div className="bg-white text-charcoal rounded-xl p-8 shadow-lg">
             <h3 className="font-serif text-2xl mb-6">Besoin d'un coup de pouce ?</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -286,7 +283,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Success Modal */}
       <AnimatePresence>
         {showModal && (
           <div 

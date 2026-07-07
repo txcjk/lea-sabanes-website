@@ -10,6 +10,13 @@ import { blogData } from '../data/blogData';
 const Home = () => {
   const { setSelectedProfile } = useProfile();
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
@@ -43,17 +50,11 @@ const Home = () => {
 
   const handleSelectProfile = (profile) => {
     setSelectedProfile(profile);
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    scrollToContact();
   };
 
   const handleCTAClick = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    scrollToContact();
   };
 
   return (
@@ -89,7 +90,6 @@ const Home = () => {
         `}</script>
       </Helmet>
 
-      {/* Hero Section */}
       <section className="pt-20 pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -135,12 +135,10 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Values Badge - Infinite Marquee */}
       <div className="bg-peach text-white">
         <Marquee items={values} speed={15} />
       </div>
 
-      {/* Services Section */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-serif text-4xl text-charcoal mb-4">Mes Services</h2>
@@ -178,7 +176,6 @@ const Home = () => {
         </motion.div>
       </section>
 
-      {/* Blog Preview Section */}
       <BlogPreview posts={latestPosts} />
 
     </main>
