@@ -126,8 +126,10 @@ const Home = () => {
               <img
                 src="/images/lea-profile.webp"
                 alt="Léa Sabanès - Gestion Administrative"
+                width="600"
+                height="800"
                 className="w-full h-full object-cover object-top"
-                loading="eager"
+                loading="lazy"
               />
             </div>
             <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-peach/20 rounded-full blur-2xl -z-10"></div>
