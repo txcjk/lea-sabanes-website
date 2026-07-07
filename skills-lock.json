@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "skills": {
+    "analytics-tracking": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/analytics-tracking/SKILL.md",
+      "computedHash": "4a8283ac9187093a0e70e2fa595c63dc564394ec929ad1c52a5297af4b02c21d"
+    },
+    "api-security-best-practices": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/api-security-best-practices/SKILL.md",
+      "computedHash": "3be34f9394f01452dde7230652831ccc4d8aca568f585e3a62e7b211c440b0ce"
+    },
+    "auth-implementation-patterns": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/auth-implementation-patterns/SKILL.md",
+      "computedHash": "30913c293c913d24635832a8bd0bb72499085f82a3b82ca1e68b8dd2deb61d08"
+    },
+    "clean-code": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/clean-code/SKILL.md",
+      "computedHash": "551e1ac1c416d9df11fce8bc613c3595794f1f5e634d20c5b3e257afded11ed7"
+    },
+    "code-review-checklist": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/code-review-checklist/SKILL.md",
+      "computedHash": "a01b83a0be291b6ad06ce49dd34d1c87df0df066f01c92f844d16c1abec5e14f"
+    },
+    "commit": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/commit/SKILL.md",
+      "computedHash": "f051561dfa0fe7caaa6a171570eb6ccef4d0b17d9a974619c9af337c681bd59c"
+    },
+    "frontend-security-coder": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-security-coder/SKILL.md",
+      "computedHash": "177d2dc4f1e79f161afce9cdfc5fac70461bac2079edfdcd300ec4aea077d393"
+    },
+    "lint-and-validate": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/lint-and-validate/SKILL.md",
+      "computedHash": "d9c39a44f6d749c1f5db424ae6eb5cf9942a5d44753a2e253a4f0b55d8ad1ca3"
+    },
+    "product-manager-toolkit": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/product-manager-toolkit/SKILL.md",
+      "computedHash": "bfde42eab1f4e8b09af0ff8ad7bfa89cd736ed8e2077407adea5f909457b33c6"
+    },
+    "react-best-practices": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/react-best-practices/SKILL.md",
+      "computedHash": "0de58562407e40b42ea14a670817a6db7583657a2503b833c25834e5832aebb1"
+    },
+    "schema-markup": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/schema-markup/SKILL.md",
+      "computedHash": "7a08bed24bd994320a0996fd5089ad79bbd1b143774eab23f7ca309db7395bbb"
+    },
+    "security-audit": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/security-audit/SKILL.md",
+      "computedHash": "75c3d961f04992c2c7adcc453a3ecbf137d4756d914614d0a41a6a6126121991"
+    },
+    "seo-audit": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/seo-audit/SKILL.md",
+      "computedHash": "f70c4f1da4018ee90146eabfde65b183be2ee275fa22c4188ce802c79509d9f8"
+    },
+    "stripe-integration": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/stripe-integration/SKILL.md",
+      "computedHash": "ed98540caaeb223486548bf16524dac1306292d13ed91505035de3ee0b548b58"
+    },
+    "supabase": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/supabase/SKILL.md",
+      "computedHash": "6cd9468af34c0dd4a2bda96d42b6f519a7ddc46081600486b0692547beef1615"
+    },
+    "systematic-debugging": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/systematic-debugging/SKILL.md",
+      "computedHash": "5b4df52335ab790b6aac1973d4acb6b968b7eda2fb79a5b1192a0ea74c128a13"
+    },
+    "tailwind-patterns": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/tailwind-patterns/SKILL.md",
+      "computedHash": "cc4becc5ff22926bf9f4c5243ffe9ed2bf3b7897b9f4bf06b102443f1c1f382c"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Cookie, X } from 'lucide-react';
+import { Cookie } from 'lucide-react';
 
 const STORAGE_KEY = 'lea-sabanes-cookie-consent';
 

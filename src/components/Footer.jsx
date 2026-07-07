@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, CheckCircle, Loader2, X, AlertCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -22,12 +22,8 @@ const Footer = () => {
   const [errors, setErrors] = useState({});
   const [touched, setTouched] = useState({});
 
-  // Bidirectional sync: when profile is selected from service cards, update form
-  useEffect(() => {
-    if (selectedProfile) {
-      setFormData(prev => ({ ...prev, profile: selectedProfile }));
-    }
-  }, [selectedProfile]);
+  // Derive profile from context, falling back to form state
+  const effectiveProfile = selectedProfile || formData.profile;
 
   const validateField = (name, value) => {
     if (!value.trim()) {
@@ -219,7 +215,7 @@ const Footer = () => {
                 <select 
                   id="contact-profile" 
                   name="profile"
-                  value={formData.profile}
+                  value={effectiveProfile}
                   onChange={handleChange}
                   className={`w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-peach focus:border-peach outline-none transition-all bg-white ${
                     selectedProfile ? 'border-peach ring-2 ring-peach/30' : 'border-gray-300'

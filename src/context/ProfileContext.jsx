@@ -1,5 +1,6 @@
 import { createContext, useContext, useState } from 'react';
 
+/* eslint-disable react-refresh/only-export-components */
 const ProfileContext = createContext({
   selectedProfile: null,
   setSelectedProfile: () => {},
