@@ -33,7 +33,7 @@ const MentionsLegales = () => {
             <ul>
               <li><strong>Nom :</strong> Léa Sabanès</li>
               <li><strong>Statut juridique :</strong> Entrepreneur Individuel (EI)</li>
-              <li><strong>Email :</strong> sabaneslea33@gmail.com</li>
+              <li><strong>Email :</strong> contact@leasabanes.fr</li>
               <li><strong>Téléphone :</strong> 07 50 65 72 62</li>
             </ul>
           </section>

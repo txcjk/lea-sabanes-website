@@ -108,7 +108,7 @@ const PolitiqueConfidentialite = () => {
               <li><strong>Droit à la portabilité :</strong> récupérer vos données dans un format structuré</li>
             </ul>
             <p>
-              Pour exercer ces droits, contactez-nous à : <strong>sabaneslea33@gmail.com</strong>.
+              Pour exercer ces droits, contactez-nous à : <strong>contact@leasabanes.fr</strong>.
             </p>
           </section>
 

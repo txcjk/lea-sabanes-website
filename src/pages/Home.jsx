@@ -81,7 +81,7 @@ const Home = () => {
             "description": "Services d'assistance administrative et accompagnement pour professionnels et particuliers.",
             "url": "https://leasabanes.fr",
             "telephone": "+33750657262",
-            "email": "sabaneslea33@gmail.com",
+            "email": "contact@leasabanes.fr",
             "areaServed": "France",
             "priceRange": "€",
             "contactPoint": {

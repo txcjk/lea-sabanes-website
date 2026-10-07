@@ -143,8 +143,8 @@ const Footer = () => {
                 <div className="w-10 h-10 rounded-full bg-peach flex items-center justify-center">
                   <Mail size={20} className="text-white" />
                 </div>
-                <a href="mailto:sabaneslea33@gmail.com" className="font-sans text-lg hover:text-peach transition-colors">
-                  sabaneslea33@gmail.com
+                <a href="mailto:contact@leasabanes.fr" className="font-sans text-lg hover:text-peach transition-colors">
+                  contact@leasabanes.fr
                 </a>
               </div>
               
