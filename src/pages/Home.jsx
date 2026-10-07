@@ -60,8 +60,10 @@ const Home = () => {
   return (
     <main className="min-h-screen">
       <Helmet>
-        <title>Accueil | Léa Sabanès - Gestion Administrative</title>
+        <title>Léa Sabanès | Secrétaire indépendante - Gestion administrative</title>
         <link rel="canonical" href="https://leasabanes.fr/" />
+        <meta property="og:url" content="https://leasabanes.fr/" />
+        <link rel="preload" as="image" href="/images/lea-profile.webp" fetchPriority="high" />
         <meta name="description" content="L'administration simplifiée, en toute confiance. Services d'assistance administrative pour professionnels et particuliers." />
         <meta property="og:title" content="Léa Sabanès - Gestion Administrative & Accompagnement" />
         <meta property="og:description" content="Déléguez vos tâches administratives à une experte de confiance. Rigueur, discrétion, réactivité." />
@@ -133,7 +135,8 @@ const Home = () => {
                 width="600"
                 height="800"
                 className="w-full h-full object-cover object-top"
-                loading="lazy"
+                loading="eager"
+                fetchPriority="high"
               />
             </div>
             <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-peach/20 rounded-full blur-2xl -z-10"></div>

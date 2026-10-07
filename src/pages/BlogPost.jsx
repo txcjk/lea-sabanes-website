@@ -42,6 +42,7 @@ const BlogPost = () => {
       <Helmet>
         <title>{`${post.title} | Léa Sabanès Blog`}</title>
         <link rel="canonical" href={`https://leasabanes.fr/blog/${post.slug}`} />
+        <meta property="og:url" content={`https://leasabanes.fr/blog/${post.slug}`} />
         <meta name="description" content={post.excerpt} />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.excerpt} />
@@ -60,7 +61,10 @@ const BlogPost = () => {
             "@type": "BlogPosting",
             "headline": "${post.title}",
             "description": "${post.excerpt}",
+            "image": "${post.image || "https://leasabanes.fr/images/lea-profile.webp"}",
             "datePublished": "${post.date}",
+            "dateModified": "${post.date}",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://leasabanes.fr/blog/${post.slug}" },
             "author": {
               "@type": "Person",
               "name": "Léa Sabanès"
@@ -114,7 +118,8 @@ const BlogPost = () => {
           <img
             src={post.image}
             alt={post.title}
-            loading="lazy"
+            loading="eager"
+            fetchPriority="high"
             className="w-full aspect-video object-cover rounded-2xl mb-12"
           />
         )}

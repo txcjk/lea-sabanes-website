@@ -2,9 +2,9 @@
   "framework": "vite",
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [{ "type": "host", "value": "www.leasabanes.fr" }],
-      "destination": "https://leasabanes.fr/:path*",
+      "destination": "https://leasabanes.fr/$1",
       "permanent": true
     }
   ],
@@ -17,8 +17,7 @@
     { "source": "/blog/succession-dossiers-preparer-avant-notaire", "destination": "/blog/succession-dossiers-preparer-avant-notaire/index.html" },
     { "source": "/blog/secretaire-independante-tarifs-2026", "destination": "/blog/secretaire-independante-tarifs-2026/index.html" },
     { "source": "/mentions-legales", "destination": "/mentions-legales/index.html" },
-    { "source": "/politique-confidentialite", "destination": "/politique-confidentialite/index.html" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/politique-confidentialite", "destination": "/politique-confidentialite/index.html" }
   ],
   "headers": [
     {

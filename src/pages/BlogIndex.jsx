@@ -31,10 +31,11 @@ const BlogIndex = () => {
   return (
     <main className="min-h-screen pt-20 pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <Helmet>
-        <title>Le Blog | Léa Sabanès</title>
+        <title>Le Blog : conseils en gestion administrative | Léa Sabanès</title>
         <link rel="canonical" href="https://leasabanes.fr/blog" />
+        <meta property="og:url" content="https://leasabanes.fr/blog" />
         <meta name="description" content="Découvrez nos articles et conseils sur la gestion administrative, l'organisation et les démarches pour les PME et les particuliers." />
-        <meta property="og:title" content="Le Blog | Léa Sabanès" />
+        <meta property="og:title" content="Le Blog : conseils en gestion administrative | Léa Sabanès" />
         <meta property="og:description" content="Conseils, astuces et actualités pour mieux vivre votre administration au quotidien." />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="fr_FR" />

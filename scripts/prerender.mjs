@@ -89,6 +89,7 @@ const ROUTES = [
     path: '/politique-confidentialite',
     label: 'politique-confidentialite',
   },
+  { path: '/404', label: 'not-found' },
 ];
 
 // ─── Utilities ────────────────────────────────────────────────────────────────
@@ -269,6 +270,14 @@ async function main() {
     for (const route of ROUTES) {
       await snapshotRouteWithPort(browser, route, port);
     }
+    // Copie la page 404 à la racine : Vercel la sert avec un statut HTTP 404
+    // pour toute route inconnue (avant : soft-404 qui renvoyait la copie de la home).
+    const notFoundFile = path.join(DIST, '404', 'index.html');
+    if (existsSync(notFoundFile)) {
+      await writeFile(path.join(DIST, '404.html'), await readFile(notFoundFile), 'utf-8');
+      console.log('  ✓ 404.html (statut 404 pour les routes inconnues)');
+    }
+
     console.log('\n✅ Prerender complete.\n');
   } finally {
     await browser.close();
