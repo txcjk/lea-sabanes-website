@@ -12,6 +12,12 @@ const BlogPreview = ({ posts }) => {
     }).format(new Date(dateStr));
   };
 
+  // Grille adaptative : la home n'affiche que les 2 derniers articles et une
+  // 3e colonne vide laissait un grand blanc à droite. En dessous de 3 articles
+  // on réduit le nombre de colonnes pour que la rangée remplisse la section.
+  const COLS = { 1: 'lg:grid-cols-1', 2: 'lg:grid-cols-2', 3: 'lg:grid-cols-3' };
+  const gridCols = COLS[Math.min(posts.length, 3)] || 'lg:grid-cols-3';
+
   return (
     <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-white">
       <div className="text-center mb-16">
@@ -21,7 +27,7 @@ const BlogPreview = ({ posts }) => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className={`grid grid-cols-1 md:grid-cols-2 ${gridCols} gap-8`}>
         {posts.map((post, idx) => (
           <motion.div
             key={post.id}
