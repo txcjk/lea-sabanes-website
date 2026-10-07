@@ -34,12 +34,27 @@ async function findFreePort(startPort) {
 }
 
 // ─── Chromium path ────────────────────────────────────────────────────────────
+// Local dev (Windows): preinstalled Chromium. Vercel build (Linux): no system
+// browser → fall back to @sparticuz/chromium (serverless build of Chromium).
 const CHROME_PATHS = [
   'C:/Users/Ludo/AppData/Local/hermes/tools/chromium-1208/chrome-win64/chrome.exe',
   'C:/Users/Ludo/AppData/Local/ms-playwright/chromium-1243/chrome-win64/chrome.exe',
   'C:/Users/Ludo/AppData/Local/ms-playwright/chromium-1223/chrome-win64/chrome.exe',
 ];
-const CHROME = CHROME_PATHS.find((p) => existsSync(p)) ?? null;
+
+async function resolveChrome() {
+  const local = CHROME_PATHS.find((p) => existsSync(p)) ?? null;
+  if (local) return { executablePath: local, args: [] };
+  try {
+    const { default: chromium } = await import('@sparticuz/chromium');
+    return {
+      executablePath: await chromium.executablePath(),
+      args: chromium.args,
+    };
+  } catch {
+    return null;
+  }
+}
 
 // ─── Routes to prerender ─────────────────────────────────────────────────────
 const ROUTES = [
@@ -189,8 +204,9 @@ async function snapshotRouteWithPort(browser, route, port) {
 
 // ─── Main ────────────────────────────────────────────────────────────────────
 async function main() {
+  const CHROME = await resolveChrome();
   if (!CHROME) {
-    console.error('Error: No Chromium found. Tried:', CHROME_PATHS);
+    console.error('Error: No Chromium found (tried local paths + @sparticuz/chromium).');
     process.exit(1);
   }
 
@@ -225,9 +241,10 @@ async function main() {
   });
 
   const browser = await puppeteer.launch({
-    executablePath: CHROME,
+    executablePath: CHROME.executablePath,
     headless: true,
     args: [
+      ...CHROME.args,
       '--no-sandbox',
       '--disable-setuid-sandbox',
       '--disable-dev-shm-usage',
