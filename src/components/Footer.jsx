@@ -152,7 +152,7 @@ const Footer = () => {
                 <div className="w-10 h-10 rounded-full bg-peach flex items-center justify-center">
                   <MapPin size={20} className="text-white" />
                 </div>
-                <span className="font-sans text-lg">Interventions à distance et sur rendez-vous</span>
+                <span className="font-sans text-lg">Interventions à Bordeaux et en Gironde, sur rendez-vous ou à distance</span>
               </div>
             </div>
           </div>

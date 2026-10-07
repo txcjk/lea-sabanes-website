@@ -40,7 +40,7 @@ const BlogPost = () => {
   return (
     <article className="pt-20 pb-24 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
       <Helmet>
-        <title>{`${post.title} | Léa Sabanès Blog`}</title>
+        <title>{`${post.metaTitle || post.title} | Léa Sabanès`}</title>
         <link rel="canonical" href={`https://leasabanes.fr/blog/${post.slug}`} />
         <meta property="og:url" content={`https://leasabanes.fr/blog/${post.slug}`} />
         <meta name="description" content={post.excerpt} />

@@ -60,19 +60,19 @@ const Home = () => {
   return (
     <main className="min-h-screen">
       <Helmet>
-        <title>Léa Sabanès | Secrétaire indépendante - Gestion administrative</title>
+        <title>Léa Sabanès, secrétaire indépendante à Bordeaux</title>
         <link rel="canonical" href="https://leasabanes.fr/" />
         <meta property="og:url" content="https://leasabanes.fr/" />
         <link rel="preload" as="image" href="/images/lea-profile.webp" fetchPriority="high" />
-        <meta name="description" content="L'administration simplifiée, en toute confiance. Services d'assistance administrative pour professionnels et particuliers." />
-        <meta property="og:title" content="Léa Sabanès - Gestion Administrative & Accompagnement" />
+        <meta name="description" content="Gestion administrative à Bordeaux et en Gironde : secrétaire indépendante pour professionnels et particuliers. Rigueur, discrétion, réactivité." />
+        <meta property="og:title" content="Léa Sabanès, secrétaire indépendante à Bordeaux" />
         <meta property="og:description" content="Déléguez vos tâches administratives à une experte de confiance. Rigueur, discrétion, réactivité." />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="fr_FR" />
         <meta property="og:image" content="https://leasabanes.fr/images/lea-profile.webp" />
         <meta property="og:image:alt" content="Léa Sabanès - Gestion Administrative" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Léa Sabanès - Gestion Administrative" />
+        <meta name="twitter:title" content="Léa Sabanès, secrétaire indépendante à Bordeaux" />
         <meta name="twitter:description" content="Services d'assistance administrative pour professionnels et particuliers." />
         <meta name="twitter:image" content="https://leasabanes.fr/images/lea-profile.webp" />
         <script type="application/ld+json">{`
@@ -84,7 +84,17 @@ const Home = () => {
             "url": "https://leasabanes.fr",
             "telephone": "+33750657262",
             "email": "contact@leasabanes.fr",
-            "areaServed": "France",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Bordeaux",
+              "addressRegion": "Gironde",
+              "addressCountry": "FR"
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Bordeaux" },
+              { "@type": "AdministrativeArea", "name": "Gironde" },
+              { "@type": "Country", "name": "France" }
+            ],
             "priceRange": "€",
             "contactPoint": {
               "@type": "ContactPoint",
