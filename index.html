@@ -12,9 +12,10 @@
          react-helmet-async. Les garder ici créait des balises en double dans le
          HTML statique pré-rendu (title/description dupliqués, og:type en conflit). -->
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-display-normal-latin.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-normal-latin.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/dancing-script-normal-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
   </head>
   <body>
     <a href="#main-content" style="position:absolute;transform:translateY(-100%);top:0;left:16px;z-index:50;padding:8px 16px;background:#c97a5d;color:white;border-radius:0 0 8px 8px;font-family:Inter,sans-serif;font-weight:500;outline:none;box-shadow:0 4px 6px rgba(0,0,0,0.1);transition:transform 0.2s" onfocus="this.style.transform='translateY(0)'" onblur="this.style.transform='translateY(-100%)'">

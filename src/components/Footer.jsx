@@ -127,7 +127,7 @@ const Footer = () => {
           
           <div className="space-y-8">
             <div>
-              <h2 className="font-serif text-3xl mb-2 text-white">Léa Sabanès</h2>
+              <p className="font-serif text-3xl mb-2 text-white">Léa Sabanès</p>
               <p className="font-script text-2xl text-peach">Votre organisation, ma priorité.</p>
             </div>
             

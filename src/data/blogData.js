@@ -24,7 +24,7 @@ export const blogData = [
       <p>Troisième erreur : tout faire par oral. Les promesses au téléphone s'envolent. Après chaque appel, un mail récapitulatif : "comme convenu, règlement de X avant le...". Trois lignes, et votre dossier tient debout.</p>
       <h2>Quand déléguer les relances</h2>
       <p>Le signal est simple : dès que vous avez fait deux relances sans réponse, ou dès que le sujet vous stresse au point de le repousser. Confier les relances à quelqu'un d'extérieur a un avantage inattendu : le client paie plus vite. Une assistante qui appelle au nom de votre entreprise, poliment mais avec un dossier complet sous les yeux, ça ne s'ignore pas comme un mail de plus. Et vous, vous gardez la bonne relation avec votre client, puisque ce n'est pas vous qui appelez.</p>
-      <p>C'est exactement ce que je fais pour plusieurs artisans : je tiens le tableau des factures, j'envoie les relances au bon moment, et je ne remonte que les cas qui coincent vraiment. Le dirigeant ne voit passer que l'essentiel.</p>
+      <p>C'est exactement ce que je fais pour plusieurs artisans : je tiens le tableau des factures, j'envoie les relances au bon moment, et je ne remonte que les cas qui coincent vraiment. Le dirigeant ne voit passer que l'essentiel. Et si vous vous demandez ce que coûte cet accompagnement, tout est détaillé dans <a href="/blog/secretaire-independante-tarifs-2026">les tarifs d'une secrétaire indépendante</a>.</p>
     `
   },
   {
@@ -51,7 +51,7 @@ export const blogData = [
       <h2>6. Testaments et volontés</h2>
       <p>Testament olographe (écrit à la main), testament déposé chez un notaire, directives anticipées : rassemblez tout ce qui exprime les volontés du défunt. Vérifiez aussi le Fichier central des dispositions de dernières volontés : le notaire le consulte systématiquement, mais savoir à l'avance qu'un testament existe ailleurs évite des semaines d'attente.</p>
       <h2>7. La chemise "où tout est"</h2>
-      <p>C'est mon conseil le plus important, et il vaut pour les vivants : une chemise, physique ou numérique, où tout est rangé et indiqué. Comptes, contrats, contacts utiles (banque, assurance, notaire habituel), mots de passe du coffre-fort numérique. Quand cette chemise existe, la succession avance. Quand elle n'existe pas, les proches passent des semaines à reconstituer une vie administrative à partir de bribes.</p>
+      <p>C'est mon conseil le plus important, et il vaut pour les vivants : une chemise, physique ou numérique, où tout est rangé et indiqué. C'est le même réflexe que pour <a href="/blog/organiser-papiers-administratifs-particulier">organiser ses papiers au quotidien</a>. Comptes, contrats, contacts utiles (banque, assurance, notaire habituel), mots de passe du coffre-fort numérique. Quand cette chemise existe, la succession avance. Quand elle n'existe pas, les proches passent des semaines à reconstituer une vie administrative à partir de bribes.</p>
       <p>Si vous lisez cet article en pensant à vos propres papiers : c'est le moment de faire cette chemise. Pour vous, et pour ceux qui resteront.</p>
     `
   },
@@ -72,7 +72,7 @@ export const blogData = [
       <h2>Ce qui fait varier les prix</h2>
       <p>La complexité, en premier. Trier du courrier et gérer un dossier de succession, ce n'est pas le même métier ni le même prix. L'urgence, ensuite : une demande pour hier soir coûte plus cher qu'une mission planifiée, partout et toujours. Le volume et la régularité, enfin : un client qui confie dix heures par mois toute l'année paie moins cher de l'heure qu'un client qui appelle deux fois par an en panique. C'est logique, et c'est négociable en toute transparence.</p>
       <h2>Salarié ou indépendante : le vrai calcul</h2>
-      <p>Comparer 35 euros de l'heure à un salaire net n'a aucun sens, et pourtant tout le monde le fait. Un salarié au SMIC coûte déjà près de 1 900 euros brut par mois avant les charges patronales, le poste de travail, les logiciels, le recrutement, les absences à absorber. Une prestation externalisée, c'est zéro charge fixe : vous payez les heures travaillées, rien d'autre. Pour un besoin à temps partiel ou irrégulier, l'écart se compte en milliers d'euros par an. Le salariat ne devient rationnel que quand le besoin est stable et proche du temps plein.</p>
+      <p>Comparer 35 euros de l'heure à un salaire net n'a aucun sens, et pourtant tout le monde le fait. Un salarié au SMIC coûte déjà près de 1 900 euros brut par mois avant les charges patronales, le poste de travail, les logiciels, le recrutement, les absences à absorber. <a href="/blog/externaliser-gestion-administrative-pme">Une prestation externalisée</a>, c'est zéro charge fixe : vous payez les heures travaillées, rien d'autre. Pour un besoin à temps partiel ou irrégulier, l'écart se compte en milliers d'euros par an. Le salariat ne devient rationnel que quand le besoin est stable et proche du temps plein.</p>
       <h2>Bien choisir sa prestataire</h2>
       <p>Exigez un devis écrit et détaillé : périmètre, volume, délais, tarif, conditions de révision. Méfiez-vous des prix sans périmètre, dans les deux sens : trop bas, et la qualité suivra ; trop vague, et la facture gonflera. Demandez comment se passent les urgences et les absences. Et fiez-vous au premier échange : une bonne assistante pose des questions précises sur votre façon de travailler. Celle qui dit oui à tout sans rien demander vous coûtera cher plus tard.</p>
       <p>Je ne publie pas mes tarifs ici, parce qu'une prestation sur mesure ne tient pas dans une grille. Mais sur simple description de votre besoin, je vous réponds avec un devis clair sous 48 heures. C'est gratuit, et ça ne vous engage à rien.</p>
@@ -93,7 +93,7 @@ export const blogData = [
       <p>En confiant vos tâches administratives (facturation, devis, relances) à une professionnelle, vous libérez du temps pour vos équipes et pour vous-même. Ce temps gagné peut être réinvesti dans des activités à plus forte valeur ajoutée, comme le développement commercial ou l'innovation.</p>
 
       <h2>2. Une maîtrise des coûts</h2>
-      <p>Embaucher un salarié à temps plein ou partiel implique des coûts fixes (charges patronales, congés payés, matériel). Avec une secrétaire indépendante, vous ne payez que les heures réellement effectuées ou les prestations définies au contrat. C'est une solution flexible qui s'adapte à la charge de travail de votre entreprise.</p>
+      <p>Embaucher un salarié à temps plein ou partiel implique des coûts fixes (charges patronales, congés payés, matériel). Avec une secrétaire indépendante, vous ne payez que les heures réellement effectuées ou les prestations définies au contrat. C'est une solution flexible qui s'adapte à la charge de travail de votre entreprise. Pour situer les prix, voir notre article sur les <a href="/blog/secretaire-independante-tarifs-2026">tarifs d'une secrétaire indépendante en 2026</a>.</p>
 
       <h2>3. Une expertise garantie</h2>
       <p>Forte de son expérience auprès de divers clients, une secrétaire freelance apporte une expertise pointue, de la rigueur et souvent de nouveaux outils d'organisation pour optimiser vos processus internes.</p>
@@ -119,7 +119,7 @@ export const blogData = [
       <p>La dématérialisation est votre meilleure alliée. Scannez les documents les plus importants et stockez-les sur un espace cloud sécurisé ou un disque dur externe. De plus en plus de démarches (CAF, Ameli, Impôts) se font exclusivement en ligne.</p>
 
       <h2>Faire appel à un professionnel</h2>
-      <p>Si la tâche vous semble insurmontable ou si vous faites face à une situation complexe (succession, retraite), l'accompagnement par une assistante administrative peut vous soulager. Elle s'occupera du tri, du classement et du suivi de vos dossiers avec la plus grande confidentialité.</p>
+      <p>Si la tâche vous semble insurmontable ou si vous faites face à une situation complexe (<a href="/blog/succession-dossiers-preparer-avant-notaire">succession</a>, <a href="/blog/preparer-dossier-retraite-sereinement">retraite</a>), l'accompagnement par une assistante administrative peut vous soulager. Elle s'occupera du tri, du classement et du suivi de vos dossiers avec la plus grande confidentialité.</p>
     `
   },
   {
@@ -137,7 +137,7 @@ export const blogData = [
       <p>La première chose à faire est de créer son espace personnel sur le site de l'Assurance Retraite. Vous pourrez y consulter votre relevé de carrière. Il est crucial de vérifier que tous vos trimestres ont bien été pris en compte et de signaler toute anomalie (jobs d'été oubliés, périodes de chômage non validées).</p>
 
       <h2>Rassembler les pièces justificatives</h2>
-      <p>Commencez tôt à rassembler vos bulletins de salaire, attestations Pôle Emploi, et décomptes d'indemnités journalières. C'est ici qu'un bon classement administratif (voir notre article précédent) prend tout son sens !</p>
+      <p>Commencez tôt à rassembler vos bulletins de salaire, attestations Pôle Emploi, et décomptes d'indemnités journalières. C'est ici qu'un bon classement administratif (voir notre article sur l'<a href="/blog/organiser-papiers-administratifs-particulier">organisation de ses papiers</a>) prend tout son sens !</p>
 
       <h2>L'accompagnement sur-mesure</h2>
       <p>Parce que chaque parcours est unique, se faire accompagner par une experte permet de s'assurer que toutes les demandes de liquidation ont été faites correctement auprès des régimes de base et complémentaires. C'est l'assurance d'un départ à la retraite l'esprit tranquille.</p>
