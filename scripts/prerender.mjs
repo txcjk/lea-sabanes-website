@@ -72,6 +72,18 @@ const ROUTES = [
     path: '/blog/preparer-dossier-retraite-sereinement',
     label: 'blog-article-3',
   },
+  {
+    path: '/blog/relancer-facture-impayee-sans-casser-relation-client',
+    label: 'blog-article-4',
+  },
+  {
+    path: '/blog/succession-dossiers-preparer-avant-notaire',
+    label: 'blog-article-5',
+  },
+  {
+    path: '/blog/secretaire-independante-tarifs-2026',
+    label: 'blog-article-6',
+  },
   { path: '/mentions-legales', label: 'mentions-legales' },
   {
     path: '/politique-confidentialite',

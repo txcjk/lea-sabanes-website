@@ -13,6 +13,9 @@
     { "source": "/blog/externaliser-gestion-administrative-pme", "destination": "/blog/externaliser-gestion-administrative-pme/index.html" },
     { "source": "/blog/organiser-papiers-administratifs-particulier", "destination": "/blog/organiser-papiers-administratifs-particulier/index.html" },
     { "source": "/blog/preparer-dossier-retraite-sereinement", "destination": "/blog/preparer-dossier-retraite-sereinement/index.html" },
+    { "source": "/blog/relancer-facture-impayee-sans-casser-relation-client", "destination": "/blog/relancer-facture-impayee-sans-casser-relation-client/index.html" },
+    { "source": "/blog/succession-dossiers-preparer-avant-notaire", "destination": "/blog/succession-dossiers-preparer-avant-notaire/index.html" },
+    { "source": "/blog/secretaire-independante-tarifs-2026", "destination": "/blog/secretaire-independante-tarifs-2026/index.html" },
     { "source": "/mentions-legales", "destination": "/mentions-legales/index.html" },
     { "source": "/politique-confidentialite", "destination": "/politique-confidentialite/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
