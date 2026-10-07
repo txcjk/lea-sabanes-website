@@ -46,7 +46,7 @@ const Home = () => {
   ];
 
   const values = ['RIGUEUR', 'DISCRÉTION', 'RÉACTIVITÉ', 'CONFIANCE'];
-  const latestPosts = blogData.slice(0, 2);
+  const latestPosts = blogData.slice(0, 3);
 
   const handleSelectProfile = (profile) => {
     setSelectedProfile(profile);
