@@ -9,6 +9,12 @@
     }
   ],
   "rewrites": [
+    { "source": "/blog", "destination": "/blog/index.html" },
+    { "source": "/blog/externaliser-gestion-administrative-pme", "destination": "/blog/externaliser-gestion-administrative-pme/index.html" },
+    { "source": "/blog/organiser-papiers-administratifs-particulier", "destination": "/blog/organiser-papiers-administratifs-particulier/index.html" },
+    { "source": "/blog/preparer-dossier-retraite-sereinement", "destination": "/blog/preparer-dossier-retraite-sereinement/index.html" },
+    { "source": "/mentions-legales", "destination": "/mentions-legales/index.html" },
+    { "source": "/politique-confidentialite", "destination": "/politique-confidentialite/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ],
   "headers": [

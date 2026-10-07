@@ -47,13 +47,13 @@ const BlogPost = () => {
         <meta property="og:description" content={post.excerpt} />
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="fr_FR" />
-        <meta property="og:image" content="https://leasabanes.fr/images/lea-profile.webp" />
+        <meta property="og:image" content={post.image || "https://leasabanes.fr/images/lea-profile.webp"} />
         <meta property="og:image:alt" content="Léa Sabanès - Gestion Administrative" />
         <meta property="article:published_time" content={post.date} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.title} />
         <meta name="twitter:description" content={post.excerpt} />
-        <meta name="twitter:image" content="https://leasabanes.fr/images/lea-profile.webp" />
+        <meta name="twitter:image" content={post.image || "https://leasabanes.fr/images/lea-profile.webp"} />
         <script type="application/ld+json">{`
           {
             "@context": "https://schema.org",
