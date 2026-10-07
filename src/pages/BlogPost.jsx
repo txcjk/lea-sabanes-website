@@ -110,6 +110,15 @@ const BlogPost = () => {
           </p>
         </header>
 
+        {post.image && (
+          <img
+            src={post.image}
+            alt={post.title}
+            loading="lazy"
+            className="w-full aspect-video object-cover rounded-2xl mb-12"
+          />
+        )}
+
         {/* The content itself is strict semantic HTML provided by the data file */}
         <div 
           className="prose prose-lg prose-headings:font-serif prose-headings:text-charcoal prose-p:font-sans prose-p:text-charcoal/80 prose-a:text-peach hover:prose-a:text-charcoal prose-strong:text-charcoal max-w-none"

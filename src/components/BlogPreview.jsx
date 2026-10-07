@@ -30,7 +30,17 @@ const BlogPreview = ({ posts }) => {
             viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.5, delay: idx * 0.1 }}
           >
-            <Card className="h-full flex flex-col hover:shadow-lg transition-all group">
+            <Card className="h-full flex flex-col hover:shadow-lg transition-all group overflow-hidden">
+              {post.image && (
+                <Link to={`/blog/${post.slug}`} tabIndex={-1} aria-hidden="true">
+                  <img
+                    src={post.image}
+                    alt=""
+                    loading="lazy"
+                    className="w-full aspect-video object-cover"
+                  />
+                </Link>
+              )}
               <div className="p-6 flex flex-col h-full">
                 <div className="flex items-center gap-4 text-xs font-sans text-charcoal/60 mb-4">
                   <span className="flex items-center gap-1">
