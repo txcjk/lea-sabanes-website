@@ -6,7 +6,12 @@ const MentionsLegales = () => {
     <main className="min-h-screen pt-20 pb-24 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
       <Helmet>
         <title>Mentions Légales | Léa Sabanès</title>
+        <link rel="canonical" href="https://leasabanes.fr/mentions-legales" />
         <meta name="description" content="Mentions légales du site de Léa Sabanès, secrétaire indépendante en gestion administrative." />
+        <meta property="og:image" content="https://leasabanes.fr/images/lea-profile.webp" />
+        <meta property="og:image:alt" content="Léa Sabanès - Gestion Administrative" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://leasabanes.fr/images/lea-profile.webp" />
         <meta name="robots" content="noindex, follow" />
       </Helmet>
 

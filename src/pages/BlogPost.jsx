@@ -18,6 +18,10 @@ const BlogPost = () => {
   if (!post) {
     return (
       <div className="min-h-[60vh] flex flex-col items-center justify-center px-4">
+        <Helmet>
+          <title>Article introuvable | Léa Sabanès</title>
+          <meta name="robots" content="noindex" />
+        </Helmet>
         <h1 className="font-serif text-3xl text-charcoal mb-4">Article introuvable</h1>
         <p className="font-sans text-charcoal/70 mb-6">L'article que vous cherchez n'existe pas ou a été déplacé.</p>
         <Button onClick={() => navigate('/blog')} variant="primary">Retour au blog</Button>
@@ -36,16 +40,20 @@ const BlogPost = () => {
   return (
     <article className="pt-20 pb-24 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
       <Helmet>
-        <title>{post.title} | Léa Sabanès Blog</title>
+        <title>{`${post.title} | Léa Sabanès Blog`}</title>
+        <link rel="canonical" href={`https://leasabanes.fr/blog/${post.slug}`} />
         <meta name="description" content={post.excerpt} />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.excerpt} />
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="fr_FR" />
+        <meta property="og:image" content="https://leasabanes.fr/images/lea-profile.webp" />
+        <meta property="og:image:alt" content="Léa Sabanès - Gestion Administrative" />
         <meta property="article:published_time" content={post.date} />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.title} />
         <meta name="twitter:description" content={post.excerpt} />
+        <meta name="twitter:image" content="https://leasabanes.fr/images/lea-profile.webp" />
         <script type="application/ld+json">{`
           {
             "@context": "https://schema.org",

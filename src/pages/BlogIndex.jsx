@@ -32,14 +32,18 @@ const BlogIndex = () => {
     <main className="min-h-screen pt-20 pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <Helmet>
         <title>Le Blog | Léa Sabanès</title>
+        <link rel="canonical" href="https://leasabanes.fr/blog" />
         <meta name="description" content="Découvrez nos articles et conseils sur la gestion administrative, l'organisation et les démarches pour les PME et les particuliers." />
         <meta property="og:title" content="Le Blog | Léa Sabanès" />
         <meta property="og:description" content="Conseils, astuces et actualités pour mieux vivre votre administration au quotidien." />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="fr_FR" />
-        <meta name="twitter:card" content="summary" />
+        <meta property="og:image" content="https://leasabanes.fr/images/lea-profile.webp" />
+        <meta property="og:image:alt" content="Léa Sabanès - Gestion Administrative" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Le Blog | Léa Sabanès" />
         <meta name="twitter:description" content="Conseils et actualités sur la gestion administrative." />
+        <meta name="twitter:image" content="https://leasabanes.fr/images/lea-profile.webp" />
       </Helmet>
 
       <div className="text-center mb-16">
